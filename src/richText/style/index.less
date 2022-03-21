@@ -1,0 +1,28 @@
+@import './default.less';
+
+.@{tea-prefix} {
+  position: relative;
+  outline: none;
+
+  &-menu {
+    padding: @p-xs;
+    border-bottom: 1px solid @border-color-split;
+
+    &-item {
+      padding: 0px 4px;
+      border: 1px solid transparent;
+
+      &-active {
+        border: 1px solid @primary-color;
+      }
+
+      &-disabled {
+        opacity: 0.2;
+      }
+    }
+  }
+
+  &-p-xs {
+    padding: @p-xs;
+  }
+}
